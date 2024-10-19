@@ -5,7 +5,7 @@ import { LuLogOut } from 'react-icons/lu'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
-const Sidebar = () => {
+const SideBar = () => {
   const navigateTo = useNavigate()
 
   const logout = async()=>{
@@ -30,4 +30,4 @@ const Sidebar = () => {
   );
 }
 
-export default Sidebar
+export default SideBar
