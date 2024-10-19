@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import SideBar from "../components/SideBar";
+import Sidebar from "../components/Sidebar";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { Context } from "../main";
 
@@ -12,7 +12,7 @@ function Dashboard() {
   }
   return (
     <div className="flex h-[90vh] bg-gray-50">
-      <SideBar/>
+      <Sidebar/>
       <div className="flex flex-col w-full">
 
         <div className=" ml-4 mt-5 h-full">

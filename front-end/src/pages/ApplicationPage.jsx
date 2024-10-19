@@ -7,7 +7,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
 import { Navigate } from "react-router-dom";
-import SideBar from "../components/SideBar";
+import Sidebar from "../components/Sidebar";
 
 const ApplicationPage = () => {
   const {isAuthenticated} = useContext(Context)
