@@ -38,6 +38,7 @@ const Vaerifyform = () => {
   }
 
   if(isEmailVerified  && isPhoneVerified){return <Navigate to="/dashboard" />}
+  if(!isAuthenticated){return <Navigate to="/" />}
 
   return (
     <div className="flex-1 bg-white flex items-center justify-center h-[90vh]">
