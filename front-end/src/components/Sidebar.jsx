@@ -5,7 +5,7 @@ import { LuLogOut } from "react-icons/lu";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-function Sidebar() {
+function SideBar() {
 
   const navigateTo = useNavigate()
 
@@ -31,4 +31,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default SideBar;
