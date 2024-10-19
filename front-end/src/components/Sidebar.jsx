@@ -11,7 +11,7 @@ function Sidebar() {
 
   const logout = async()=>{
     try{
-      await axios.get("http://localhost:4000/api/v1/user/logout",{withCredentials:true}).then(()=>{
+      await axios.get("https://cuvette-assignment-backend-3lf7.onrender.com/api/v1/user/logout",{withCredentials:true}).then(()=>{
         toast.success("Logged Out Successfully!")
         navigateTo("/")
       })

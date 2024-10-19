@@ -23,7 +23,7 @@ const SignUpForm = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-        await axios.post("http://localhost:4000/api/v1/user/register",formData,{withCredentials:true, headers:{"Content-Type":"application/json"}}).then((res)=>{
+        await axios.post("https://cuvette-assignment-backend-3lf7.onrender.com/api/v1/user/register",formData,{withCredentials:true, headers:{"Content-Type":"application/json"}}).then((res)=>{
           setIsAuthenticated(true);
           navigateTo("/verify");
           toast.success(res.data.message);

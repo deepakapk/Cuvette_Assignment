@@ -16,7 +16,7 @@ const Vaerifyform = () => {
     e.preventDefault()
     try{
 
-      await axios.post("http://localhost:4000/api/v1/user/verifyemail",{emailOtp},{withCredentials:true, headers:{"Content-Type":"application/json"}}).then(()=>{
+      await axios.post("https://cuvette-assignment-backend-3lf7.onrender.com/api/v1/user/verifyemail",{emailOtp},{withCredentials:true, headers:{"Content-Type":"application/json"}}).then(()=>{
         toast.success("Otp Verified")
         setEmailVerified(true)
       })
@@ -28,7 +28,7 @@ const Vaerifyform = () => {
     e.preventDefault()
     try{
 
-      await axios.post("http://localhost:4000/api/v1/user/verifyphone",{phoneOtp},{withCredentials:true, headers:{"Content-Type":"application/json"}}).then(()=>{
+      await axios.post("https://cuvette-assignment-backend-3lf7.onrender.com/api/v1/user/verifyphone",{phoneOtp},{withCredentials:true, headers:{"Content-Type":"application/json"}}).then(()=>{
         toast.success("Otp Verified")
         setPhoneVerified(true)
       })

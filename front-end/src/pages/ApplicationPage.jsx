@@ -31,7 +31,7 @@ const ApplicationPage = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try{
-        await axios.post("http://localhost:4000/api/v1/job/jobpost",formData,{withCredentials:true,headers:{"Content-Type":"application/json"}}).then(()=>{
+        await axios.post("https://cuvette-assignment-backend-3lf7.onrender.com/api/v1/job/jobpost",formData,{withCredentials:true,headers:{"Content-Type":"application/json"}}).then(()=>{
             toast.success("Job Posted Successfully!")
         })
     }catch(error){
