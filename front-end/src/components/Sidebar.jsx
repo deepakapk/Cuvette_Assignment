@@ -2,7 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { FaHome } from 'react-icons/fa'
 import { LuLogOut } from 'react-icons/lu'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
 const Sidebar = () => {
@@ -21,7 +21,7 @@ const Sidebar = () => {
   return (
     <div className="w-20 h-full bg-white shadow-md">
       <div className="flex items-center justify-center h-16">
-       <FaHome className="text-2xl text-gray-600" onClick={navigateTo("/dashboard")}/>
+        <Link to={"/dashboard"}><FaHome className="text-2xl text-gray-600" /></Link>
       </div>
       <div className="flex items-center justify-center h-16">
         <LuLogOut className="text-2xl text-gray-600" onClick={logout}/>
