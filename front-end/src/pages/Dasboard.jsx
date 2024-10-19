@@ -16,10 +16,10 @@ function Dashboard() {
       <div className="flex flex-col w-full">
 
         <div className=" ml-4 mt-5 h-full">
-          <Navigate className="px-6 py-3 mb-8 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
+          <Link className="px-6 py-3 mb-8 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
           to={"/jobpost"}>
             Create Interview
-          </Navigate>
+          </Link>
         </div>
       </div>
     </div>

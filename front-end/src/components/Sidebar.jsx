@@ -21,7 +21,7 @@ const Sidebar = () => {
   return (
     <div className="w-20 h-full bg-white shadow-md">
       <div className="flex items-center justify-center h-16">
-        <Navigate to={"/dashboard"}><FaHome className="text-2xl text-gray-600" /></Navigate>
+       <FaHome className="text-2xl text-gray-600" onClick={navigateTo("/dashboard")}/>
       </div>
       <div className="flex items-center justify-center h-16">
         <LuLogOut className="text-2xl text-gray-600" onClick={logout}/>
