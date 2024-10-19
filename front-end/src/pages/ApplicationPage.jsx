@@ -3,11 +3,11 @@ import { useContext, useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsCalendar } from "react-icons/bs";
-import SideBar from "../components/SideBar";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
 import { Navigate } from "react-router-dom";
+import Sidebar from "../components/SideBar";
 
 const ApplicationPage = () => {
   const {isAuthenticated} = useContext(Context)
@@ -42,7 +42,7 @@ const ApplicationPage = () => {
   return (
     <>
      <div className="flex h-[90vh] bg-gray-50">
-     <SideBar />
+      <Sidebar/>
     <div className="h-[80vh] bg-white flex flex-col items-center p-8 w-screen">
       <div className="w-full max-w-2xl bg-gray-50 rounded-lg shadow-lg p-6 space-y-4">
         <h1 className="text-2xl font-bold text-gray-700 mb-4">Create Job Application</h1>
